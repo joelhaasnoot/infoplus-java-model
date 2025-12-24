@@ -16,7 +16,7 @@ Add the following to your Maven configuration
 
 ```maven
 <dependency>
-  <groupId>nl.openov</groupId>
+  <groupId>nl.bliksemlabs</groupId>
   <artifactId>infoplus-java-model</artifactId>
   <version>1.0-SNAPSHOT</version>
 </dependency>

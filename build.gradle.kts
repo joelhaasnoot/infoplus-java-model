@@ -4,7 +4,7 @@ plugins {
     id("maven-publish")
 }
 
-group = "nl.openov"
+group = "nl.bliksemlabs"
 version = "1.0-SNAPSHOT"
 
 repositories {
