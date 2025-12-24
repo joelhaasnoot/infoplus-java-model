@@ -10,6 +10,32 @@ Supported
 ----
 - **RIT** – These messages contain information about all the stops of a single train journey/service and any changes to it.
 
+Usage
+---
+Add the following to your Maven configuration
+
+```maven
+<dependency>
+  <groupId>nl.openov</groupId>
+  <artifactId>infoplus-model-java</artifactId>
+  <version>1.0-SNAPSHOT</version>
+</dependency>
+```
+
+or Gradle
+```gradle
+  repositories {
+      mavenCentral()
+      maven {
+          url = uri("https://maven.pkg.github.com/joelhaasnoot/infoplus-model-java")
+      }
+  }
+
+  dependencies {
+      implementation("nl.openov:infoplus-model:1.0-SNAPSHOT")
+  }
+```
+
 TODO
 ---
 - Publish to Github Packages
