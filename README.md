@@ -38,7 +38,6 @@ or Gradle
 
 TODO
 ---
-- Publish to Github Packages
 - DVS messages
 - DAS messages
 - Verstoringsinformatie: LAB, TRB, STB, VTT, VTL, VTS etc
