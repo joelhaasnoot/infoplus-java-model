@@ -1,4 +1,4 @@
-infoplus-model
+infoplus-model-java
 =====
 
 Library containing generated Java model classes for processing the NS Infoplus data for train travel information in the Netherlands. 
@@ -21,3 +21,5 @@ TODO
 Also see
 ---
 - Alternative for Javascript: https://www.npmjs.com/package/travel-info-types
+- NETEX: https://github.com/entur/netex-java-model
+- SIRI: https://github.com/entur/siri-java-model

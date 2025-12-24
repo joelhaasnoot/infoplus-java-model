@@ -1,6 +1,7 @@
 plugins {
     id("java")
     id("com.github.bjornvester.xjc") version "1.9.0"
+    id("maven-publish")
 }
 
 group = "nl.openov"
@@ -31,4 +32,55 @@ xjc {
     bindingFiles.setFrom(layout.projectDirectory.dir("src/main/resources").asFileTree.matching { include("**/*.xjb") })
     includes.set(listOf("RITPush_RITPushExport-v5.wsdl"))
     options.add("-wsdl")
+}
+
+java {
+    withSourcesJar()
+    withJavadocJar()
+}
+
+// Publish to Github Packages
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            from(components["java"])
+
+            pom {
+                name.set("InfoPlus Model")
+                description.set("Java model/classes for InfoPlus messages")
+                url.set("https://github.com/joelhaasnoot/infoplus-model-java")
+
+                licenses {
+                    license {
+                        name.set("MIT License")
+                        url.set("https://opensource.org/licenses/MIT")
+                    }
+                }
+
+                developers {
+                    developer {
+                        id.set("joelhaasnoot")
+                        name.set("Joel Haasnoot")
+                    }
+                }
+
+                scm {
+                    connection.set("scm:git:git://github.com/joelhaasnoot/infoplus-model-java.git")
+                    developerConnection.set("scm:git:ssh://github.com/joelhaasnoot/infoplus-model-java.git")
+                    url.set("https://github.com/joelhaasnoot/infoplus-model-java")
+                }
+            }
+        }
+    }
+
+    repositories {
+        maven {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/joelhaasnoot/infoplus-model-java")
+            credentials {
+                username = System.getenv("GITHUB_ACTOR")
+                password = System.getenv("GITHUB_TOKEN")
+            }
+        }
+    }
 }
