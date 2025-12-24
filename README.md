@@ -45,6 +45,6 @@ TODO
 
 Also see
 ---
-- Alternative for Javascript: https://www.npmjs.com/package/travel-info-types
+- Alternative for Javascript: https://github.com/InterlockedSim/travel-info-types
 - NETEX: https://github.com/entur/netex-java-model
 - SIRI: https://github.com/entur/siri-java-model
