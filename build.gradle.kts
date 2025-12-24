@@ -12,15 +12,15 @@ repositories {
 }
 
 dependencies {
-    testImplementation(platform("org.junit:junit-bom:5.10.0"))
-    testImplementation("org.junit.jupiter:junit-jupiter")
-    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
-
     // JAXB runtime for unmarshalling
-    testImplementation("org.glassfish.jaxb:jaxb-runtime:4.0.6")
+    implementation("org.glassfish.jaxb:jaxb-runtime:4.0.6")
 
     // Rewrite
     implementation("io.github.threeten-jaxb:threeten-jaxb-core:2.2.0") // This version is for Jakarta
+
+    testImplementation(platform("org.junit:junit-bom:5.10.0"))
+    testImplementation("org.junit.jupiter:junit-jupiter")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
 tasks.test {
