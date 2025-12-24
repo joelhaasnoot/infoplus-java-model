@@ -46,5 +46,12 @@ TODO
 Also see
 ---
 - Alternative for Javascript: https://github.com/InterlockedSim/travel-info-types
+
+Other transit models in Java
+---
 - NETEX: https://github.com/entur/netex-java-model
 - SIRI: https://github.com/entur/siri-java-model
+- BISON KV6 https://github.com/bliksemlabs/kv6-java-model
+- BISON KV15 https://github.com/bliksemlabs/kv15-java-model
+- BISON KV17 https://github.com/bliksemlabs/kv17-java-model
+- BUSON KV4 https://github.com/bliksemlabs/kv4-java-model
