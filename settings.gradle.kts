@@ -1,1 +1,1 @@
-rootProject.name = "infoplus-model-java"
+rootProject.name = "infoplus-java-model"

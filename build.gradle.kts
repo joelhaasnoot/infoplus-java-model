@@ -48,7 +48,7 @@ publishing {
             pom {
                 name.set("InfoPlus Model For Java")
                 description.set("Java model/classes for InfoPlus messages")
-                url.set("https://github.com/joelhaasnoot/infoplus-model-java")
+                url.set("https://github.com/joelhaasnoot/infoplus-java-model")
 
                 licenses {
                     license {
@@ -65,9 +65,9 @@ publishing {
                 }
 
                 scm {
-                    connection.set("scm:git:git://github.com/joelhaasnoot/infoplus-model-java.git")
-                    developerConnection.set("scm:git:ssh://github.com/joelhaasnoot/infoplus-model-java.git")
-                    url.set("https://github.com/joelhaasnoot/infoplus-model-java")
+                    connection.set("scm:git:git://github.com/joelhaasnoot/infoplus-java-model.git")
+                    developerConnection.set("scm:git:ssh://github.com/joelhaasnoot/infoplus-java-model.git")
+                    url.set("https://github.com/joelhaasnoot/infoplus-java-model")
                 }
             }
         }
@@ -76,7 +76,7 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/joelhaasnoot/infoplus-model-java")
+            url = uri("https://maven.pkg.github.com/joelhaasnoot/infoplus-java-model")
             credentials {
                 username = System.getenv("GITHUB_ACTOR")
                 password = System.getenv("GITHUB_TOKEN")

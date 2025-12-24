@@ -1,4 +1,4 @@
-infoplus-model-java
+infoplus-java-model
 =====
 
 Library containing generated Java model classes for processing the NS Infoplus data for train travel information in the Netherlands. 
@@ -17,7 +17,7 @@ Add the following to your Maven configuration
 ```maven
 <dependency>
   <groupId>nl.openov</groupId>
-  <artifactId>infoplus-model-java</artifactId>
+  <artifactId>infoplus-java-model</artifactId>
   <version>1.0-SNAPSHOT</version>
 </dependency>
 ```
@@ -27,12 +27,12 @@ or Gradle
   repositories {
       mavenCentral()
       maven {
-          url = uri("https://maven.pkg.github.com/joelhaasnoot/infoplus-model-java")
+          url = uri("https://maven.pkg.github.com/joelhaasnoot/infoplus-java-model")
       }
   }
 
   dependencies {
-      implementation("nl.openov:infoplus-model:1.0-SNAPSHOT")
+      implementation("nl.openov:infoplus-java-model:1.0-SNAPSHOT")
   }
 ```
 
